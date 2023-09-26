@@ -1,5 +1,7 @@
-from fastapi import FastAPI
 import pyjokes
+from fastapi import FastAPI
+
+from fastapi import FastAPI
 app = FastAPI()
 @app.get("/")
 def joke():
@@ -28,5 +30,4 @@ def create_joke(joke_input: JokeInput):
 @app.post("/", response_model=Joke)
 def create_joke(joke_input: JokeInput):
     """Создание шутки"""
-    #123
     return Joke(friend=joke_input.friend, joke=pyjokes.get_joke())
