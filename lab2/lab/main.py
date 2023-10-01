@@ -1,33 +1,35 @@
-import pyjokes
-from fastapi import FastAPI
+# Документация
 
-from fastapi import FastAPI
-app = FastAPI()
-@app.get("/")
-def joke():
-    return pyjokes.get_joke()
-@app.get("/{friend}")
-def friends_joke(friend: str):
-    return friend + " tells his joke:" + pyjokes.get_joke()
-@app.get("/multi/{friend}")
-def multi_friends_joke(friend: str, jokes_number: int):
-    result = ""
-    for i in range(jokes_number):
-     result += friend + f" tells his joke #{i + 1}: " + pyjokes.get_joke() + ""
-    return result
-from pydantic import  BaseModel
-class Joke(BaseModel):
-    friend: str
-    joke: str
-class JokeInput(BaseModel):
-    friend: str
-@app.post("/")
-def create_joke(joke_input: JokeInput):
-    return joke_input.friend + " tells his joke:" + pyjokes.get_joke()
-@app.post("/")
-def create_joke(joke_input: JokeInput):
-    return Joke(friend=joke_input.friend, joke=pyjokes.get_joke())
-@app.post("/", response_model=Joke)
-def create_joke(joke_input: JokeInput):
-    """Создание шутки"""
-    return Joke(friend=joke_input.friend, joke=pyjokes.get_joke())
+a = bin(10)[2:]
+print(a)
+
+I = 'История'
+ORG = 'ОРГ'
+M = 'Математика'
+R = 'Русский'
+IN = 'Английский'
+PD = 'Проектная деятельность'
+S = 'Социология'
+MIC = 'Микроэкономика'
+
+VM = 'Выш мат'
+LM = 'Лин алгебра'
+F = 'Физра'
+IT = 'ИТ'
+OK = 'Основы кибернетики'
+
+# Время пар солнышки
+ft = '(9:00 - 10:30): '
+sd = '(10:40 - 12:10): '
+th = '(12:20 - 13:50): '
+fr = '(14:20 - 15:50): '
+fi = '(16:00 - 17:30): '
+
+# Мое время пар
+ft1 = '(9:30 - 11:05): '
+sd1 = '(11:20 - 12:55): '
+th1 = '(13:10 - 14:45): '
+fr1 = '(15:25 - 17:00): '
+fi1 = '(17:15 - 18:50): '
+
+# Решение
