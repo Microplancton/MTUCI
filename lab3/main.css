@@ -1,0 +1,219 @@
+main.css
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1F2027;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none; 
+}
+.sidebar {
+    position: absolute;
+    width: 262px;
+    height: 100vh;
+    border-right: 1px solid #4D4F5F;
+}
+.logo img{
+    width: 170px;
+}
+.logo {
+    position: absolute;
+    top: 17.3px;
+    left: 8px;
+}
+.calendar {
+    position: absolute;
+    top: 105px;
+    left: 28.6px;
+}
+.leftcolumn {
+    display: inline-block;
+    background-color: white;
+    border-radius: 99px;
+    width: 2px;
+    height: 44px;
+}
+.dayofweek {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.fulldate {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.date {
+    color: white;
+    position: relative;
+    top: -6px;
+    margin-left: 22px;
+    font-family: Nunito;
+    display: inline-block;
+}
+.navigation {
+    position: absolute;
+    top: 72px;
+    font-family: Nunito;
+}
+.header {
+    color: #4D4F5F;
+    font-size: 13.3px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 22px;
+}
+.active {
+    background-color: #372579;
+}
+.active a {
+    color: white;
+}
+.option {
+    border-radius: 18px;
+    width: 208px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #4D4F5F;
+    font-family: Nunito;
+    font-size: 16.6px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: all 140ms linear;
+    cursor: pointer;
+}
+.option a {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    top: 10px;
+}
+.option img {
+    height: 22px;
+    position: relative;
+    top: 15px;
+    left: 22px;
+    transition: all 140ms linear;
+}
+.option:hover {
+    filter: brightness(200%);
+}
+.active:hover {
+    filter: brightness(130%);
+}
+.header a {
+    margin-left: 49px;
+}
+html.is-changing .transition-fade {
+    transition: opacity 0.25s;
+    opacity: 1;
+  }
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+main {
+    position: absolute;
+    left: 263px;
+    margin-left: calc((100vw - 263px) / 2 - 505px)
+}
+.back{
+    z-index: -1;
+    position: relative;
+    top: -95px;
+    width: 1010px;
+    border-radius: 26.6px;
+}
+.mtuci {
+    width: 529px;
+    position: absolute;
+    top: -48px;
+    left: 545px;
+    animation: rotation 20s infinite linear;
+}
+.widget {
+    position: absolute;
+    top: 200px;
+    border-radius: 26.6px;
+    margin-top: -80px;
+    color: white;
+    overflow: hidden;
+    height: 227px;
+}
+.m-header {
+    margin-top: 48px;
+    color: white;
+    font-family: Nunito;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.w-header {
+    display: block;
+    position: relative;
+    top: 70px;
+    margin-left: 72px;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.w-text {
+    display: block;
+    position: relative;
+    top: 70px;
+    margin-left: 72px;
+    font-family: Nunito;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.w-author {
+    display: block;
+    position: relative;
+    top: 75px;
+    margin-left: 72px;
+    font-family: Nunito;
+    font-size: 16.6px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.m-text {
+    display: block;
+    position: absolute;
+    width: 1010px;
+    top: 370px;
+    color: white;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.github {
+    background-color: rgb(119, 111, 139);
+    border-radius: 25px;
+    width: 200px;
+    text-align: center;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.github img {
+    width: 150px;
+}

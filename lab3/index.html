@@ -1,0 +1,61 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+    const swup = new Swup();
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+    <title>MTUCI Lab3</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="media/logo.svg" alt="">
+        </div>
+        <div class="calendar">
+            <div class="leftcolumn"></div>
+            <div class="date">
+                <div class="dayofweek" id="dow">Понедельник</div>
+                <div class="fulldate" id="fd">25.09</div>
+            </div>
+            <div class="navigation">
+                <div class="header"><a>Навигация</a></div>
+                <div id="m0" class="option active" onclick="switchpage('main');">
+                    <img id="m1" src="media/compass-03.svg" alt="">
+                    <img id="m2" hidden="true" src="media/compass-031.svg" alt="">
+                    <a>Главная</a>
+                </div>
+                <div id="p0" class="option" onclick="switchpage('portfolio');">
+                    <img id="p1" src="media/briefcase-02.svg" alt="">
+                    <img id="p2" hidden="true" src="media/briefcase-021.svg" alt="">
+                    <a>Портфолио</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="swup" class="transition-fade">
+        <div class="m-header">Главная</div>
+        <div class="widget">
+            <a class="w-header">Lorem ipsum</a>
+            <a class="w-text">Lorem ipsum dolor sit amet</a>
+            <a class="w-author">Sed ut perspiciatis</a>
+            <img class="mtuci" src="media/mtuci.svg" alt="">
+            <img class="back" src="media/background.svg" alt="">
+        </div>
+        <div class="m-text">
+            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="calendar.js"></script>
+</html>
